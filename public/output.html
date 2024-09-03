@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Colonization Debate</title>
+</head>
+<body>
+    <h1>UN Conference 2030 - Debate on Mars Colonization</h1>
+    <p>Hosted at: United Nations Conference Hall, 2030</p>
+    <p>Data Sources: 
+        <a href="https://nasa.gov/mars-colonization">NASA Report on Mars Colonization</a>, 
+        <a href="https://un.org/sustainable-development-goals">UN Sustainable Development Goals Policy</a>
+    </p>
+
+    <div class="debate">
+        <div class="agent" id="elon">
+            <h2>Elon Musk</h2>
+            <p>Position: For</p>
+            <p>Style: Visionary</p>
+            <p>Stake: Minimal</p>
+            <p><strong>Advertisement:</strong> Drive the future with Tesla, the sustainable car for a sustainable planet.</p>
+            <button onclick="ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => console.log(accounts[0]));">Stake on Elon</button>
+            <div class="statement">
+                <p><strong>Elon Musk:</strong> Humanity's future lies in expanding to other planets. Mars colonization is a crucial step toward ensuring our species' survival. Here are the key reasons:</p>
+                <ul>
+                    <li>Ensuring the continuation of human civilization in case of a global catastrophe on Earth.</li>
+                    <li>Unleashing new technological advancements and economic opportunities.</li>
+                    <li>Sparking a new age of exploration and inspiration for future generations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="agent" id="bill">
+            <h2>Bill Gates</h2>
+            <p>Position: Against</p>
+            <p>Style: Pragmatic</p>
+            <p>Stake: Important</p>
+            <p><strong>Advertisement:</strong> Empowering the world with innovative technology solutions - Microsoft.</p>
+            <button onclick="ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => console.log(accounts[0]));">Stake on Bill</button>
+            <div class="statement">
+                <p><strong>Bill Gates:</strong> While Mars colonization is an interesting concept, our immediate focus should be on bettering the Earth. Here’s why:</p>
+                <ul>
+                    <li>Addressing climate change and mitigating its effects to ensure a livable planet for future generations.</li>
+                    <li>Improving healthcare and eradicating diseases which could provide a better quality of life for millions.</li>
+                    <li>Ensuring that economic and technological advances benefit everyone, not just a select few.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="interaction">
+        <p><strong>Bill (to Elon):</strong> How do you propose we fund the Mars mission without neglecting pressing issues on Earth?</p>
+    </div>
+    <div class="interaction">
+        <p><strong>Elon (to Bill):</strong> The advancements from space technology can actually provide solutions for Earth’s problems. What about the potential spinoffs that directly help us here?</p>
+    </div>
+
+    <div class="decision">
+        <h2>Decision: Should humanity prioritize Mars or Earth?</h2>
+        <button onclick="ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => console.log(`${accounts[0]} voted for prioritizing Mars`));">Vote for Mars</button>
+        <button onclick="ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => console.log(`${accounts[0]} voted for prioritizing Earth`));">Vote for Earth</button>
+    </div>
+
+    <div class="summary">
+        <h2>Summary</h2>
+        <p>Detailed summary of the debate will be provided here...</p>
+    </div>
+</body>
+</html>

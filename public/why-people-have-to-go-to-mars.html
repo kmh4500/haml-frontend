@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate: Should Humanity Prioritize Mars or Earth?</title>
+    <script src="https://cdn.jsdelivr.net/gh/MetaMask/eth-request.js"></script>
+    <script>
+        async function handleMetamaskRequest() {
+            try {
+                const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                console.log(accounts);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="banner" style="background-color: lightgray; padding: 10px;">
+        <h1>UN Conference 2030</h1>
+        <p><em>Can Humanity Benefit More from Colonizing Mars or Improving Earth?</em></p>
+    </div>
+
+    <div class="content">
+        <h2>Debate on Mars Colonization</h2>
+        <div class="speakers">
+            <div class="speaker" id="elon">
+                <h3>Elon Musk (Visionary for Mars Colonization)</h3>
+                <p><strong>Stake:</strong> 1</p>
+                <p><em>Driving the future with Tesla, the sustainable car for a sustainable planet. <a href="https://example.com/track-click?ad_id=tesla1" onclick="handleMetamaskRequest()">[Advertisement]</a></em></p>
+                <button onclick="handleMetamaskRequest()">Stake on Elon</button>
+                <p><strong>Argument For:</strong> Going to Mars is a step towards ensuring the survival of our species. By establishing a colony on Mars, we could mitigate the risks of catastrophic events on Earth, and inspire generations to pursue space exploration.</p>
+            </div>
+
+            <div class="speaker" id="bill">
+                <h3>Bill Gates (Pragmatic against Mars Colonization)</h3>
+                <p><strong>Stake:</strong> 2</p>
+                <p><em>Empowering the world with innovative technology solutions. <a href="https://example.com/track-click?ad_id=microsoft1" onclick="handleMetamaskRequest()">[Advertisement]</a></em></p>
+                <button onclick="handleMetamaskRequest()">Stake on Bill</button>
+                <p><strong>Argument Against:</strong> Our focus should be on addressing pressing issues here on Earth, such as poverty, disease, and climate change. Investing in these areas will yield immediate and tangible benefits for billions of people.</p>
+            </div>
+        </div>
+
+        <div class="interaction">
+            <p><strong>Question from Bill:</strong> Elon, considering the immense challenges and costs associated with Mars colonization, do you believe it's a justifiable allocation of resources when so many critical issues on Earth remain unsolved?</p>
+            <p><strong>Challenge from Elon:</strong> Bill, don't you think that by pushing the boundaries of human innovation and exploring Mars, we could develop new technologies that could also benefit Earth in unforeseen ways?</p>
+        </div>
+
+        <div class="decision">
+            <h3>Decision: Should Humanity Prioritize Mars or Earth?</h3>
+            <button onclick="handleMetamaskRequest()">Vote</button>
+            <button onclick="handleMetamaskRequest()">Fund</button>
+        </div>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p>This debate brings to light crucial considerations in the allocation of our resources and ambitions. On one hand, we have the visionary pursuit of space exploration, championed by Elon Musk, focusing on the survival and advancement of human civilization beyond Earth. On the other hand, Bill Gates emphasizes a pragmatic approach, prioritizing immediate humanitarian and environmental needs on our home planet. Both positions underscore the values of innovation, sustainability, and the pursuit of a better future for all.</p>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: lightgray; padding: 10px; text-align: center;">
+        <p>Data Sources:</p>
+        <ul>
+            <li><a href="https://nasa.gov/mars-colonization" target="_blank" rel="noopener noreferrer">NASA Report on Mars Colonization</a></li>
+            <li><a href="https://un.org/sustainable-development-goals" target="_blank" rel="noopener noreferrer">UN Sustainable Development Goals</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+```

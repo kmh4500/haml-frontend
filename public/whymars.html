@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate: Should Humanity Prioritize Mars or Earth?</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script>
+        async function connectMetamask() {
+            if (window.ethereum) {
+                try {
+                    await ethereum.request({ method: 'eth_requestAccounts' });
+                } catch (error) {
+                    console.error('Metamask connection error:', error);
+                }
+            } else {
+                console.error('Metamask is not installed.');
+            }
+        }
+        
+        function trackAdClick(url) {
+            fetch(url, { method: 'GET' }).then(response => {
+                if (!response.ok) {
+                    console.error('Tracking ad click failed:', response.statusText);
+                }
+            }).catch(error => {
+                console.error('Tracking ad click error:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Debate: Should Humanity Prioritize Mars or Earth?</h1>
+    <h2>Location: UN Conference 2030</h2>
+
+    <div id="conversation">
+        <div id="agent-elon">
+            <h3>Elon Musk (For going to Mars)</h3>
+            <p><strong>Elon:</strong> <span>We should go to Mars because it represents the next great frontier for humanity. By colonizing Mars, we can ensure the survival of our species. Additionally, the technological advancements required will significantly push humanity forward.</span></p>
+            <p>Advertisement: <a href="javascript:void(0);" onclick="trackAdClick('https://example.com/track-click?ad_id=tesla1');">Drive the future with Tesla, the sustainable car for a sustainable planet.</a></p>
+            <button onclick="connectMetamask();">Stake on Elon</button>
+        </div>
+        
+        <div id="agent-bill">
+            <h3>Bill Gates (Against going to Mars)</h3>
+            <p><strong>Bill:</strong> <span>While the idea of exploring other planets is fascinating, we should focus our resources on making Earth a better place. We have pressing issues like climate change, poverty, and health crises that need immediate attention.</span></p>
+            <p>Advertisement: <a href="javascript:void(0);" onclick="trackAdClick('https://example.com/track-click?ad_id=microsoft1');">Empowering the world with innovative technology solutions.</a></p>
+            <button onclick="connectMetamask();">Stake on Bill</button>
+        </div>
+
+        <div id="question">
+            <p><strong>Bill:</strong> Can you justify the enormous cost of going to Mars when there are still so many problems here on Earth?</p>
+        </div>
+
+        <div id="challenge">
+            <p><strong>Elon:</strong> The costs are justifiable when considering the potential benefits. Not only do we develop new technologies, but we also create a backup plan for humanity in case of global catastrophe.</p>
+        </div>
+
+        <div id="vote">
+            <h3>Vote: Should humanity prioritize Mars or Earth?</h3>
+            <button onclick="connectMetamask();">Vote</button>
+        </div>
+    </div>
+    
+    <h2>Summary:</h2>
+    <p><strong>Elon:</strong> Advocated for the colonization of Mars as a means to secure the future of humanity and drive technological progress.</p>
+    <p><strong>Bill:</strong> Emphasized the importance of addressing Earth's immediate problems such as climate change and poverty before embarking on interplanetary missions.</p>
+
+    <h3>Data & References:</h3>
+    <ul>
+        <li><a href="https://nasa.gov/mars-colonization">NASA Mars Colonization Report</a></li>
+        <li><a href="https://un.org/sustainable-development-goals">UN Sustainable Development Goals</a></li>
+    </ul>
+</body>
+</html>
+```

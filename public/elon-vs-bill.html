@@ -1,0 +1,92 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Debate</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethereum-metamask-beta/dist/metamask-bundle.js"></script>
+    <script>
+        async function connectToMetamask() {
+            await ethereum.request({ method: 'eth_requestAccounts' });
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <h1>Debate: Should Humanity Prioritize Mars or Earth?</h1>
+        <p><strong>Location:</strong> UN Conference</p>
+        <p><strong>Time:</strong> 2030</p>
+        <p><strong>Reports:</strong>
+            <a href="https://nasa.gov/mars-colonization">NASA Report on Mars Colonization</a>,
+            <a href="https://un.org/sustainable-development-goals">UN Sustainable Development Goals</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Debaters</h2>
+
+        <div>
+            <h3>Elon Musk (Visionary, For Mars)</h3>
+            <p>"We need to become a multi-planetary species to ensure the survival of humanity. Mars is the next frontier."</p>
+            <button onclick="connectToMetamask()">Stake on Elon</button>
+            <p><em>Advertisement: Drive the future with Tesla, the sustainable car for a sustainable planet.</em></p>
+        </div>
+
+        <div>
+            <h3>Bill Gates (Pragmatic, For Earth)</h3>
+            <p>"Our efforts should be focused on solving the pressing issues on Earth; improving healthcare, education, and tackling climate change."</p>
+            <button onclick="connectToMetamask()">Stake on Bill</button>
+            <p><em>Advertisement: Empowering the world with innovative technology solutions by Microsoft.</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Debate Transcript</h2>
+        <div>
+            <strong>Bill Gates:</strong> "Why should we invest so heavily in Mars when there are so many issues that need to be addressed here on Earth?"
+        </div>
+        <div>
+            <strong>Elon Musk:</strong> "While it's crucial to address Earth's problems, investing in Mars is an investment in our long-term survival as a species."
+        </div>
+        <div>
+            <strong>Bill Gates:</strong> "What about the immense cost of such a mission? Couldn’t that money be better spent improving lives on Earth?"
+        </div>
+        <div>
+            <strong>Elon Musk:</strong> "The technology developed for Mars colonization will also benefit Earth. Think of the advancements in sustainable energy and habitation."
+        </div>
+        <div>
+            <strong>Bill Gates:</strong> "But wouldn't it be more efficient to work directly on solutions for Earth rather than indirectly via Mars technologies?"
+        </div>
+        <div>
+            <strong>Elon Musk:</strong> "Diversifying our civilization to another planet provides a safety net against existential threats to humanity."
+        </div>
+        <div>
+            <strong>Bill Gates:</strong> "But isn’t it irresponsible to divert resources away from urgent issues like poverty and climate change?"
+        </div>
+        <div>
+            <strong>Elon Musk:</strong> "I'm not suggesting we abandon Earth. We can and should pursue both goals with a balanced approach."
+        </div>
+        <div>
+            <strong>Bill Gates:</strong> "How do you propose we balance such enormous investments for Mars while still addressing Earth's needs effectively?"
+        </div>
+        <div>
+            <strong>Elon Musk:</strong> "By driving innovation and creating new industries, we can generate the wealth necessary to tackle both challenges simultaneously."
+        </div>
+    </section>
+
+    <section>
+        <h2>Your Decision</h2>
+        <button onclick="connectToMetamask()">Vote</button>
+    </section>
+
+    <section>
+        <h2>Summary</h2>
+        <p>The debate between Elon Musk and Bill Gates highlighted two important perspectives: the visionary goal of making humanity a multi-planetary species to ensure long-term survival, and the pragmatic approach of addressing Earth's current and pressing concerns like healthcare, education, and climate change. Both debaters agreed that balancing investments in Mars colonization with solutions for Earth's problems is crucial. The discussion emphasized the potential benefits of Mars technologies for Earth and the importance of a future-focused yet pragmatic approach to human civilization's progress.</p>
+    </section>
+</body>
+
+</html>
+```
